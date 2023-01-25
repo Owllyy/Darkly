@@ -1,0 +1,11 @@
+By bruteforcing directories with a wordlist i have found /admin and /whatever.
+
+At /whatever there was a file "htpasswd" containing a combined list username:password of size one.
+At /admin there was a login form for admin.
+Next step was to decode the flag with MD5 decode algorithm to find "qwerty123@" and connect to /admin.
+
+Solution: 
+	- Rename all your directories with different name that default
+	- Choose a better encoding algorithm like sha256
+	- Don't allow directorie search //TODO
+	- Choose better password (longer at least)
