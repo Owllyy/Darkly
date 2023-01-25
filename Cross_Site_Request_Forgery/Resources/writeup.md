@@ -8,4 +8,4 @@ reveals a flag on the page.
 
 Dangers:
 
-Possible fix solution: validate referer on sensitive pages by cross checking real origin and theorical origin.
+Possible fix solution: validate referer on sensitive pages by cross checking real origin and theorical origin or avoid using this type of validation altogether.
