@@ -1,0 +1,6 @@
+On the 'add image' page, there is a file upload <form></form>.
+
+My first test was to try, uploading some file with different extention, then try to upload double extention.
+Finally i have intercepted my POST request, and change the type of the file to image/jpeg, by changing the value of the field type-content.
+
+Possible fix solution: check the magic number of the file on the server.
