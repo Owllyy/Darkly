@@ -1,0 +1,7 @@
+On page /?page=feedback there is a <form> where you can post message, and see the posted message.
+
+The user input is not sanitize properly so it leads to a Stored XSS vulnerability.
+My payload was : <script>alert(1);</script> on the name field.
+
+Solution:
+	- Sanitize ths user input, by removing key character
