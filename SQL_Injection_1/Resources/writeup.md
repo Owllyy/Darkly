@@ -14,4 +14,6 @@ Upon closer inspection we can see that the users table contains several other fi
 town, country, planet, Commentaire, countersign.
 Showing the content of the Commentaire and countersign for user 5 reveals an MD5 hash as countersign (FortyTwo) while the Commentaire hints to lower case the result (fortytwo) and perform a sha256 hash on it which yields a flag.
 
+Dangers: access to sensitive data, ability to modify data
+
 Possible fix solution: do not insert user input directly in SQL queries.
