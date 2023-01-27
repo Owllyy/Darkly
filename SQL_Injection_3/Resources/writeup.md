@@ -7,6 +7,12 @@ This revealed two users (root, admin) with the same password.
 Upon closer inspection the password was an MD5 hash for the string 'shadow'.
 Logging in with these credentials revealed a flag.
 
-Dangers: access to sensitive data, ability to modify data
+Vulnerability:
+A type of attack that allows unauthorized access to a website's database by using an input field to insert malicious SQL queries.
 
-Possible fix solution: do not insert user input directly in SQL queries.
+Dangers: access to sensitive data, ability to modify data...
+
+Possible fix solutions:
+
+- using parameterized queries to ensure user input is properly separated from SQL commands
+- validation and sanitization of user input
