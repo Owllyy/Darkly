@@ -1,11 +1,13 @@
-By bruteforcing directories with a wordlist i have found /admin and /whatever.
+Bruteforcing directories with a wordlist revealed /admin paths.
 
-At /whatever there was a file "htpasswd" containing a combined list username:password of size one.
-At /admin there was a login form for admin.
-Next step was to decode the flag with MD5 decode algorithm to find "qwerty123@" and connect to /admin.
+At /whatever (Sensitive Data Exposure on robots.txt) there was a file "htpasswd" containing a combined username:password list of size one.
+Using dirbuster (CLI tool) and the wordlist dictionary.txt at root directories revealed the /admin page where there was a login form.
+The next step was to decode the flag with an MD5 decode algorithm to find "qwerty123@" and connect to /admin.
 
-Solution: 
-	- Rename all your directories with different name that default
-	- Choose a better encoding algorithm like sha256
-	- Don't allow directorie search //TODO
-	- Choose better password (longer at least)
+Danger:
+It can mainly lead to Sensitive data exposure.
+
+Solution:
+- Rename all your directories and config file with different names than default ones
+- Choose a better encoding algorithm like sha256 for password
+- Choose better passwords (longer at least)
