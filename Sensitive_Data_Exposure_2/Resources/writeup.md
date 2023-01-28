@@ -1,5 +1,5 @@
 A file typically found on websites is the robots.txt file.
-This file is used to let web crawlers or similar automated tools to not be accessed or indexed.
+This file is used to let web crawlers or similar automated tools know not to access or index specific locations on the website.
 
 On this website it revealed the existence of a folder called .hidden.
 This reveals a location with 26 folders that each lead to more folders up to a depth of 3.

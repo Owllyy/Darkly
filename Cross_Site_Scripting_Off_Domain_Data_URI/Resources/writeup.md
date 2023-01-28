@@ -12,6 +12,6 @@ Dangers:
 While this payload only triggers an alert with the value '1', it is possible to inject malicious scripts to unsuspecting users via modified URLs, leading to authentification leaks, malicious actions(fund transfer..).
 
 Solutions:
-- Sanitize user input to escape special characters
-- Content Security Policy (restrict sources of scripts allowed)
-- Subressource Integrity (match the hash of scripts to verify the integrity of the loaded page)
+	- sanitize user input to escape special characters
+	- content Security Policy (restrict sources of scripts allowed)
+	- subressource Integrity (match the hash of scripts to verify the integrity of the loaded page)

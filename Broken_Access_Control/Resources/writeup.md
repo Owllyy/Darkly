@@ -13,5 +13,5 @@ Dangers:
 Mostly dependent on the website implementation, but it will typically be used to bypass access restrictions on specific content, requests, etc. and can lead to sensitive data exposure or host hijacking.
 
 Solution: 
-- Validate referer on sensitive pages by cross checking real origin and theorical origin
-- Use an unpredictable randomly generated Authentification Token
+	- validate referer on sensitive pages by cross checking real origin and theorical origin
+	- use an unpredictable randomly generated Authentification Token

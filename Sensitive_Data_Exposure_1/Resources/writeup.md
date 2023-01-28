@@ -10,4 +10,5 @@ Sensitive Data Exposure is the accidental release of sensitive information (like
 Dangers:
 Depends on the nature of the leaked data.
 
-Possible fix solution: do not send a form containing the mail input for regular users and fill the required information on the server directly.
+Solution:
+	- do not send forms containing sensitive data, hidden or not, and fill the required information on the server directly.
