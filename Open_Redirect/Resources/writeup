@@ -1,0 +1,14 @@
+The footer contains several redirects with different links. Each button takes an url parameter to do so.
+
+By changing the url parameter 'site' and clicking the button, the flag appears.
+http://10.0.2.15/index.php?page=redirect&site=givemeyourcookie
+
+Vulnerability:
+Open Redirect vulnerabilities are a type of security vulnerability that occur when an application redirects users to an external URL without properly validating or sanitizing the URL.
+
+Dangers:
+This vulnerability allows attackers to build malicious URLs that redirect users to malicious websites potentially compromising their sensitive information or as part of phishing attacks.
+
+Solution:
+	- sanitize all URL parameters
+	- only redirect to trusted websites

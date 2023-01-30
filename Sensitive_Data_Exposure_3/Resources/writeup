@@ -1,11 +1,14 @@
 Bruteforcing directories with a wordlist revealed an /admin path.
 
 At /whatever (Sensitive Data Exposure on robots.txt) there was a file "htpasswd" containing a combined username:password list of size one.
-Using dirbuster (CLI tool) and the wordlist dictionary.txt at root directories revealed the /admin page where there was a login form.
+Using a wordlist dictionary.txt at root directories revealed the /admin page where there was a login form.
 The next step was to decode the flag with an MD5 decode algorithm to find "qwerty123@" and connect to /admin.
 
+Vulnerability:
+Sensitive Data Exposure is the accidental release of sensitive information (like personal information, login credentials, confidential business inforation..).
+
 Danger:
-It can mainly lead to Sensitive data exposure.
+Depends on the nature of the leaked data.
 
 Solutions:
 	- rename all your directories and config file with different names than default ones

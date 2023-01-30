@@ -12,6 +12,7 @@
 # on at least 2 hosts.  This was the first draft of the list.
 #
 
+admin
 cgi-bin
 education
 betsie
@@ -1892,7 +1893,6 @@ header
 common
 etrade
 logos
-admin
 storage
 subpage
 clientside
