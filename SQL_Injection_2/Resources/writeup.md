@@ -5,9 +5,9 @@ Using UNION to show hidden fields from the list_images table reveals a MD5 hash 
 Vulnerability:
 A type of attack that allows unauthorized access to a website's database by using an input field to insert malicious SQL queries.
 
-Dangers: access to sensitive data, ability to modify data...
+Dangers:
+Access to sensitive data, ability to modify data...
 
-Possible fix solutions:
-
-- using parameterized queries to ensure user input is properly separated from SQL commands
-- validation and sanitization of user input
+Solutions:
+	- using parameterized queries to ensure user input is properly separated from SQL commands
+	- validation and sanitization of user input

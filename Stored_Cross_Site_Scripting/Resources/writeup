@@ -1,7 +1,15 @@
-On page /?page=feedback there is a <form> where you can post message, and see the posted message.
+On the 'feedback' page there is a <form> where you can post message, and see the posted message.
 
-The user input is not sanitize properly so it leads to a Stored XSS vulnerability.
-My payload was : <script>alert(1);</script> on the name field.
+The user input is not sanitized properly so it leads to a Stored XSS vulnerability.
+The used payload was <script>alert(1);</script> on the name field.
+
+Vulnerability:
+Cross-Site Scripting vulnerabilities are used to load malicious scripts on web pages. The Stored version, as the name implies, causes the malicious code to be stored and executed anytime the affected page is loaded.
+
+Dangers:
+While this payload only triggers an alert with the value '1', it is possible to inject malicious scripts to unsuspecting users leading to authentification leaks, malicious actions (fund transfer..).
 
 Solution:
-	- Sanitize ths user input, by removing key character
+	- sanitize user input to escape special characters
+	- content Security Policy (restrict sources of scripts allowed)
+	- subressource Integrity (match the hash of scripts to verify the integrity of the loaded page)

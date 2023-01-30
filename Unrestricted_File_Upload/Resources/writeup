@@ -1,6 +1,14 @@
 On the 'add image' page, there is a file upload <form></form>.
 
-My first test was to try, uploading some file with different extention, then try to upload double extention.
-Finally i have intercepted my POST request, and change the type of the file to image/jpeg, by changing the value of the field type-content.
+The initial test was to try uploading a file with a different extension, then try to upload one with a double extension.
+Finally the POST request was intercepted and the filetype was changed to image/jpeg, by changing the value of the type-content field.
 
-Possible fix solution: check the magic number of the file on the server.
+Vulnerability:
+Unrestricted File Upload vulnerabilities are the upload of any type of file without proper validation and restrictions.
+
+Dangers:
+Malicious files like viruses and exploits can be uploaded and executed on the server, which can potentially compromise the application and the underlying system. In some cases users could also be affected.
+
+Solutions:
+	- check the magic number of the file on the server
+	- virus scanning

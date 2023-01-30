@@ -11,4 +11,4 @@ Dangers:
 Depends on the nature of the leaked data.
 
 Solution:
-	- do not send forms containing sensitive data, hidden or not, and fill the required information on the server directly.
+	- do not send forms containing sensitive data, hidden or not, and fill the required information on the server directly

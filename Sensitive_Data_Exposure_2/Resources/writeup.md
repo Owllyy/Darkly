@@ -10,6 +10,11 @@ then using grep locally to find a file containing a string in a flag format:
 grep -rl -E "[a-f0-9]{64}" /path/to/.hidden
 revealed a readme file with a flag.
 
-Dangers:
+Vulnerability:
+Sensitive Data Exposure is the accidental release of sensitive information (like personal information, login credentials, confidential business inforation..).
 
-Possible fix solution:
+Dangers:
+Depends on the nature of the leaked data.
+
+Solution:
+	- do not keep sensitive data on accessable locations.
